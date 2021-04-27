@@ -1,0 +1,21 @@
+ion-content {
+  --background: #ff8700;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: 400px;
+    height: 360px;
+  }
+}
+
+.title {
+  font-family: "Roboto";
+  font-weight: 600;
+  color: white;
+  font-size: xx-large;
+}

@@ -1,0 +1,70 @@
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <div class="bg-g">
+    <ion-header [translucent]="true">
+
+
+      <ion-toolbar>
+        <ion-title>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-label class="label-top">Total:</ion-label>
+                <ion-label class="label-top"> {{somaTotal | currency:'BRL'}} <img class='img-top'
+                    src="../../assets/icons8-dólar-americano-50.png" alt="card">
+                </ion-label>
+              </ion-col>
+              <ion-col class="col-align">
+                <ion-icon class="logout-icon" name="power-sharp" (click)="logout()">
+                </ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <div class="grid-container">
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-comida-fast-food-street-food-18-100.png"
+          alt="">
+        <h2 class='title-bill'>Comida</h2>
+        <h2>{{foodTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-dinheiro-na-mão-100.png" alt="">
+        <h2 class='title-bill'>Conta</h2>
+        <h2>{{billTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-equipas-100.png" alt="">
+        <h2 class='title-bill'>Roupa</h2>
+        <h2>{{clothingTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-cartões-de-banco-100 (1).png" alt="">
+        <h2 class='title-bill'>Cartão</h2>
+        <h2>{{cardTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-imóveis-100.png" alt="">
+        <h2 class='title-bill'>Aluguel</h2>
+        <h2>{{rentTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-estetoscópio-100.png" alt="">
+        <h2 class='title-bill'>Saúde</h2>
+        <h2>{{healthTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-car-sale-100.png" alt="">
+        <h2 class='title-bill'>Veículo</h2>
+        <h2>{{carTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-engarrafamento-100.png" alt="">
+        <h2 class='title-bill'>Transporte</h2>
+        <h2>{{transpTotal | currency:'BRL'}}</h2>
+      </div>
+      <div class="grid-item"><img class="img-align" src="../../assets/icons8-melhoria-de-processos-100.png" alt="">
+        <h2 class='title-bill'>Outros</h2>
+        <h2>{{otherTotal | currency:'BRL'}}</h2>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

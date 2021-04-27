@@ -1,0 +1,7 @@
+{
+  "name": "money-me",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

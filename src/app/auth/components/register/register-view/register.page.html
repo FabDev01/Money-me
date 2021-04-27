@@ -1,0 +1,28 @@
+<ion-icon class="back" name="arrow-back-outline" routerLink='/login'></ion-icon>
+<ion-content>
+  <div style="margin: 14vh 4vh">
+    <form>
+      <ion-item style="margin-bottom: 4vh;">
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input placeholder="Digite Seu Nome" [(ngModel)]="user.name" [ngModelOptions]="{standalone: true}">
+        </ion-input>
+      </ion-item>
+
+      <ion-item style="margin-bottom: 4vh;">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input placeholder="Ex: teste@gmail.com" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}">
+        </ion-input>
+      </ion-item>
+
+      <ion-item style="margin-bottom: 9vh;">
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input placeholder="Senha com no mínimo 6 dígitos" type='password' [(ngModel)]="user.password"
+          [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item>
+      <ion-button color="warning" (click)="register()">
+        <h3>Registrar</h3>
+      </ion-button>
+    </form>
+  </div>
+  <img class="img-login" src="../../../../../assets/svgback2.png" alt="">
+</ion-content>

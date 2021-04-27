@@ -1,0 +1,31 @@
+.back {
+  margin: 10px;
+  height: 24px;
+  width: 24px;
+}
+.item-mg {
+  margin-bottom: 4vh;
+}
+
+ion-button {
+  width: 84vw;
+  margin-top: 10vh;
+  h3 {
+    color: white;
+    margin-bottom: 0px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+}
+.box {
+  margin: 10vh 4vh;
+}
+@media only screen and (min-width: 600px) {
+  ion-button {
+    width: 27vw !important;
+    margin-top: 6vh !important;
+  }
+  .box {
+    margin: 6vh 4vh;
+  }
+}

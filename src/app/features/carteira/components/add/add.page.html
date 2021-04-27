@@ -1,0 +1,46 @@
+<ion-icon class="back" name="arrow-back-outline" (click)="close()"></ion-icon>
+
+<ion-content>
+    <div class='box'>
+        <form>
+            <ion-item class="item-mg">
+                <ion-label position="floating">Nome
+                </ion-label>
+                <ion-input [(ngModel)]="item.title" [ngModelOptions]="{standalone: true}" name="item.title"></ion-input>
+            </ion-item>
+            <ion-list class="item-mg">
+                <ion-item>
+                    <ion-label>Tipo</ion-label>
+                    <ion-select interface="action-sheet" mode="ios" placeholder="Categorias" [(ngModel)]="item.type"
+                        [ngModelOptions]="{standalone: true}">
+                        <ion-select-option value="Aluguel">Aluguel</ion-select-option>
+                        <ion-select-option value="Cartão">Cartão</ion-select-option>
+                        <ion-select-option value="Conta">Conta</ion-select-option>
+                        <ion-select-option value="Comida">Comida</ion-select-option>
+                        <ion-select-option value="Outros">Outros</ion-select-option>
+                        <ion-select-option value="Roupa">Roupa</ion-select-option>
+                        <ion-select-option value="Saúde">Saúde</ion-select-option>
+                        <ion-select-option value="Transporte">Transporte</ion-select-option>
+                        <ion-select-option value="Veículo">Veículo</ion-select-option>
+
+                    </ion-select>
+                </ion-item>
+            </ion-list>
+            <ion-item class="item-mg">
+                <ion-label position="floating">Valor
+                </ion-label>
+                <ion-input type='number' [(ngModel)]="item.amount" [ngModelOptions]="{standalone: true}"
+                    name="item.amount">
+                </ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Vencimento</ion-label>
+                <ion-datetime [(ngModel)]="item.date" name='item.date' mode='ios' displayFormat="MM/DD"
+                    placeholder="Data de Vencimento"></ion-datetime>
+            </ion-item>
+            <ion-button color="warning" (click)="AddBill()">
+                <h3>Adicionar</h3>
+            </ion-button>
+        </form>
+    </div>
+</ion-content>

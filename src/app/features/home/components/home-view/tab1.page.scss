@@ -1,0 +1,108 @@
+ion-content {
+  --background: #f7f7f7;
+}
+
+.card-top {
+  display: flex;
+  height: 15vh;
+  align-items: baseline;
+  flex-direction: column;
+  background: #ffffff;
+  margin: 0px;
+}
+
+.card-top-slot-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .h1-slot-1 {
+    margin-left: 7vw;
+    margin-top: 5vh;
+    color: #2b2b2b;
+    font-family: "Roboto Slab", serif;
+  }
+}
+
+h1 h2 h3 p {
+  color: #2b2b2b;
+  font-family: "Roboto Slab", serif;
+}
+
+// .bg-g {
+//   height: 91.1vh;
+//   background-color: #f7f7f7;
+// }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 6vh;
+  h2 {
+    color: #ff9a28;
+  }
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border: solid 1.5px #ffffff;
+  font-size: 30px;
+  text-align: center;
+  height: 17vh;
+  width: 29vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2vh 1vh;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+}
+
+.img-align {
+  width: 45px;
+  margin-top: 2vh;
+  position: relative;
+  top: 6%;
+}
+
+.title-bill {
+  margin: 2px 0px;
+  font-size: 12px;
+  height: 18px;
+  color: #c5c5c5 !important;
+}
+
+.label-top {
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+
+  .img-top {
+    height: 25px;
+    margin-left: 4px;
+  }
+}
+
+main {
+  background: #f7f7f7 !important;
+}
+
+ion-title {
+  padding-right: 0px;
+}
+
+.logout-icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.col-align {
+  display: flex;
+  justify-content: flex-end;
+}

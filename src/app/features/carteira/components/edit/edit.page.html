@@ -1,0 +1,46 @@
+<ion-icon class="back" name="arrow-back-outline" (click)="close()"></ion-icon>
+
+<ion-content>
+  <div class="box">
+    <form [formGroup]="itemForm">
+      <ion-item class="item-mg">
+        <ion-label position="floating">
+        </ion-label>
+        <ion-input formControlName='title'></ion-input>
+        <!--title -->
+      </ion-item>
+      <ion-list class="item-mg">
+        <ion-item>
+          <ion-label>Tipo</ion-label>
+          <ion-select interface="action-sheet" mode="ios" placeholder="Categorias" formControlName='type'>
+            <!--type -->
+            <ion-select-option value="Aluguel">Aluguel</ion-select-option>
+            <ion-select-option value="Cartão">Cartão</ion-select-option>
+            <ion-select-option value="Conta">Conta</ion-select-option>
+            <ion-select-option value="Comida">Comida</ion-select-option>
+            <ion-select-option value="Outros">Outros</ion-select-option>
+            <ion-select-option value="Roupa">Roupa</ion-select-option>
+            <ion-select-option value="Saúde">Saúde</ion-select-option>
+            <ion-select-option value="Transporte">Transporte</ion-select-option>
+            <ion-select-option value="Veículo">Veículo</ion-select-option>
+
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-item class="item-mg">
+        <ion-label position="floating">Valor
+        </ion-label>
+        <ion-input type='number' formControlName='amount'>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Vencimento</ion-label>
+        <ion-datetime formControlName='date' mode='ios' displayFormat="MM/DD" placeholder="Data de Vencimento">
+        </ion-datetime>
+      </ion-item>
+      <ion-button color="warning" (click)="EditBill()">
+        <h3>Editar</h3>
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

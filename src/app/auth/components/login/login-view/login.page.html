@@ -1,0 +1,30 @@
+<ion-content>
+  <img class="img-login" src="../../../../../assets/svgtop.png" alt="">
+  <div class="container-login">
+    <form>
+      <ion-item style="margin-bottom: 4vh;">
+        <ion-label position="floating">Email
+        </ion-label>
+        <ion-input [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item>
+      <ion-item style="margin-bottom: 9vh;">
+        <ion-label position="floating">Senha
+        </ion-label>
+        <ion-input type='password' [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}">
+        </ion-input>
+      </ion-item>
+      <div class="buttons">
+        <ion-button color="warning" (click)="login()">
+          <h3>Entrar</h3>
+        </ion-button>
+        <div class='login-btn'>
+          <ion-button class='reg' routerLink="/register">
+            <h3>Registrar</h3>
+          </ion-button>
+          <a routerLink="/forget">Esqueceu a senha</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <img class="img-login-2" src="../../../../../assets/svgback2.png" alt="">
+</ion-content>
