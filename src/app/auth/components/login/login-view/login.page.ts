@@ -27,6 +27,7 @@ export class LoginPage implements OnInit {
         .then((res) => {
           this.presentLoading();
           console.log(res);
+          console.log('User conect!');
         })
         .catch((e) => {
           console.log(e);
@@ -45,9 +46,8 @@ export class LoginPage implements OnInit {
     });
     await loading.present();
 
-    const { role, data } = await loading.onDidDismiss();
     this.router.navigateByUrl('/tabs/tab1');
-    console.log('Loading dismissed!');
+    console.log('User conect!');
   }
 
   async toastNot() {

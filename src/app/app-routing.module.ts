@@ -36,13 +36,13 @@ const routes: Routes = [
       ),
     ...canActivate(redirectLoggedInUsers),
   },
-  {
-    path: 'splash',
-    loadChildren: () =>
-      import('./features/splash-screen/splash-screen.module').then(
-        (m) => m.SplashScreenPageModule
-      ),
-  },
+  // {
+  //   path: 'splash',
+  //   loadChildren: () =>
+  //     import('./features/splash-screen/splash-screen.module').then(
+  //       (m) => m.SplashScreenPageModule
+  //     ),
+  // },
   // {
   //   path: '',
   //   redirectTo: '/splash',

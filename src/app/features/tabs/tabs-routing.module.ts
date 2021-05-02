@@ -21,7 +21,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: '/splash',
+    redirectTo: '/login',
     pathMatch: 'full',
   },
 ];

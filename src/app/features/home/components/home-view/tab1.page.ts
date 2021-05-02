@@ -82,8 +82,6 @@ export class Tab1Page implements OnInit {
       )
       // tslint:disable-next-line: deprecation
       .subscribe();
-    // this.auth.user.subscribe();
-    // this.tab1Service.getWithfilter('Conta').subscribe(console.log);
     // this.tab1Service.getWithfilter('Comida').subscribe(console.log); //!where firebase
   }
 
@@ -105,7 +103,6 @@ export class Tab1Page implements OnInit {
 
   filterFood() {
     this.filtroFood = this.arrayItems.filter(({ type }) => type === 'Comida');
-
     this.foodMap = this.filtroFood.map(({ amount }) => Number(amount));
     this.foodTotal = this.foodMap.reduce(
       (total: any, numero: any) => total + numero,
@@ -223,10 +220,11 @@ export class Tab1Page implements OnInit {
       .signOut()
       .then((r) => {
         console.log(r);
-        this.router.navigateByUrl('login');
+        this.router.navigateByUrl('');
       })
       .catch((e) => {
         console.log(e);
+        this.router.navigateByUrl('');
       });
   }
 }
